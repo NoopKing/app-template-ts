@@ -1,6 +1,5 @@
 import request from "../models/index.js"
 import ultilsCC from "../Ultils/index.js"
-import Cielo1 from "../checkers/cielo-1.js"
 import Rede1 from "../checkers/rede1.js"
 import {
   searchData,
