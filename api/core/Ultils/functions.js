@@ -9,14 +9,13 @@ export async function ccIsValidAndResult( {
 }) {
   console.log( "acessed ./ult.../functions.js")
   console.log(ultilsCC?.validate)
-  return {
-    sla: JSON.stringify(ultilsCC?.validate),
-    po: ultilsCC["validate"]
-  }
-  if (!cc || !await ultilsCC["validate"](cc)) return {
-    success: false,
-    result: "cc invalida"
-  }
+  // return {
+  //   sla: JSON.stringify(ultilsCC?.validate)
+  // }
+  // if (!cc || !await ultilsCC["validate"](cc)) return {
+  //   success: false,
+  //   result: "cc invalida"
+  // }
 
   const bin = await request({
     method: "GET",
