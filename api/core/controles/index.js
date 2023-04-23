@@ -17,6 +17,7 @@ const functionalities = {
       ultilsCC: ultilsCC,
       request: request
     })
+    return dataBinAndResult
 console.log(ultilsCC)
 // return {
 //   sla: String(ultilsCC)
