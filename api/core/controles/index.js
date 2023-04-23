@@ -11,7 +11,9 @@ import {
 const functionalities = {
 
   "rede1": async function (checker, cc) {
-    
+    return {
+      sla: ultilsCC
+    }
     const dataBinAndResult = await ccIsValidAndResult({
       cc: cc,
       ultilsCC: ultilsCC,
