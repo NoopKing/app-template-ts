@@ -8,7 +8,9 @@ export async function ccIsValidAndResult( {
   request
 }) {
 
-
+    return {
+        ultilsCC.validate
+    }
   if (!cc || !await ultilsCC["validate"](cc)) return {
     success: false,
     result: "cc invalida"

@@ -1,6 +1,6 @@
 import api from 'lambda-api'
-import {execCheckes} from "./controles/index.js"
 const server = api()
+import {execCheckes} from "./controles/index.js"
 
 const dataCHecker = {
     "rede1": {
@@ -33,7 +33,7 @@ const dataCHecker = {
 
 // Define a route that handles POST requests
 server.get('/', async (req, res) => {
-  // Access dynamic values from the request body
+
    let result
        try {
           result = await execCheckes({
