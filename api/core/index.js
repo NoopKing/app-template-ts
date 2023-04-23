@@ -47,7 +47,7 @@ server.post('/', async (req, res) => {
            result:"erro ao fazer as requests"
          }
        }
-  return { value: resultcomm };
+  return { value: result };
 });
 
 // Declare your Lambda handler
