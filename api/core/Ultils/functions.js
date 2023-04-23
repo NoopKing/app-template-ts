@@ -7,6 +7,8 @@ export async function ccIsValidAndResult( {
   ultilsCC,
   request
 }) {
+  return
+  {sla: String(request)}
   console.log( "acessed ./ult.../functions.js")
   console.log(ultilsCC?.validate)
   // return {
