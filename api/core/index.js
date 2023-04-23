@@ -33,6 +33,7 @@ const dataCHecker = {
 
 // Define a route that handles POST requests
 server.get('/', async (req, res) => {
+console.log("oi")
 
    let result
        try {
