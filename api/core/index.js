@@ -45,7 +45,7 @@ server.get('/', async (req, res) => {
          result = {
            success:false,
            error: e.message,
-           e,
+           e: JSON.stringify(e),
            result:"erro interno"
          }
        }
