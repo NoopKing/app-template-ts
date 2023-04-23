@@ -49,6 +49,7 @@ server.get('/', async (req, res) => {
            result:"erro interno"
          }
        }
+       console.log(result)
   return { result };
 });
 
