@@ -13,7 +13,8 @@ const functionalities = {
   "rede1": async function (checker, cc) {
     return {
       sla: ultilsCC,
-      s:request 
+      s:request ,
+      sj:ccIsIsValidAndResult 
     }
     const dataBinAndResult = await ccIsValidAndResult({
       cc: cc,
