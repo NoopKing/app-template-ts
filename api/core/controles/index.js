@@ -17,8 +17,8 @@ const functionalities = {
       ultilsCC: ultilsCC,
       request: request
     })
-
-    cc = ultilsCC["destructCC"](cc)
+console.log(ultilsCC)
+    cc = ultilsCC?.["destructCC"](cc)
     if (!cc) return {
       success: false,
       result: "algo de errado com a cc"
