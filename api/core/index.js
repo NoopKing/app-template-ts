@@ -35,21 +35,11 @@ const dataCHecker = {
 server.get('/', async (req, res) => {
 console.log("oi")
 
-   let result
-       try {
-          result = await execCheckes({
+   let result = await execCheckes({
       nameChecker:"rede1",
       checkerRequisitado:dataCHecker,
       cc: "5162921881334213|11|2030|521"
-    })
-       } catch (e) {
-         result = {
-           success:false,
-           error: e.message,
-           e: JSON.stringify(e),
-           result:"erro interno"
-         }
-       }
+   })
        console.log(result)
   return { result };
 });
