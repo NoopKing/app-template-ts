@@ -44,7 +44,8 @@ server.post('/', async (req, res) => {
        } catch (e) {
          result = {
            success:false,
-           error: e,
+           error: e.message,
+           e,
            result:"erro interno"
          }
        }
