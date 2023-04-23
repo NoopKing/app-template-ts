@@ -34,14 +34,21 @@ const dataCHecker = {
 // Define a route that handles POST requests
 server.get('/', async (req, res) => {
   // Access dynamic values from the request body
-   let result = await execCheckes({
+   let result
+       try {
+          result = await execCheckes({
       nameChecker:"rede1",
       checkerRequisitado:dataCHecker,
       cc: "5162921881334213|11|2030|521"
     })
-       
-       
-       
+       } catch (e) {
+         result = {
+           success:false,
+           error: e.message,
+           e,
+           result:"erro interno"
+         }
+       }
   return { result };
 });
 
