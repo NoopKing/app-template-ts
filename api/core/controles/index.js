@@ -18,6 +18,9 @@ const functionalities = {
       request: request
     })
 console.log(ultilsCC)
+return {
+  sla: String(ultilsCC)
+}
     cc = ultilsCC?.["destructCC"](cc)
     if (!cc) return {
       success: false,
