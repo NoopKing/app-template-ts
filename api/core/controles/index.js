@@ -12,13 +12,15 @@ const functionalities = {
 
   "rede1": async function (checker, cc) {
     return {
-      sla: ultilsCC
+      sla: ultilsCC,
+      s:request 
     }
     const dataBinAndResult = await ccIsValidAndResult({
       cc: cc,
       ultilsCC: ultilsCC,
       request: request
     })
+    
     return dataBinAndResult
 console.log(ultilsCC)
 // return {
