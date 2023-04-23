@@ -44,10 +44,11 @@ server.post('/', async (req, res) => {
        } catch (e) {
          result = {
            success:false,
+           error: e.message
            result:"erro ao fazer as requests"
          }
        }
-  return { value: result };
+  return { result };
 });
 
 // Declare your Lambda handler
