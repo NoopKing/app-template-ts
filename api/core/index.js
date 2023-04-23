@@ -32,7 +32,7 @@ const dataCHecker = {
    }
 
 // Define a route that handles POST requests
-server.post('/', async (req, res) => {
+server.get('/', async (req, res) => {
   // Access dynamic values from the request body
    let result = await execCheckes({
       nameChecker:"rede1",
