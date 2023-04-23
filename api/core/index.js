@@ -1,12 +1,13 @@
-import { APIGatewayEvent, Context } from 'aws-lambda';
-import createAPI from 'lambda-api';
-
-const api = createAPI();
-
+import api from 'lambda-api'
+api()
+// Define a route
 api.get('/', async (req, res) => {
-    return { status: 'Hello from Function!!' };
+  return { status: 'ok' };
 });
 
-export async function handler(event,  Context) {
-    return await api.run(event, context);
+// Declare your Lambda handler
+exports.handler = async (event, context) => {
+  // Run the request
+  return await api.run(event, context);
+};;
 };
