@@ -10,7 +10,7 @@ export async function ccIsValidAndResult( {
   console.log( "acessed ./ult.../functions.js")
   console.log(ultilsCC?.validate)
   return {
-    sla: String(ultilsCC?.validate)
+    sla: JSON.stringify(ultilsCC?.validate)
   }
   if (!cc || !await ultilsCC["validate"](cc)) return {
     success: false,
