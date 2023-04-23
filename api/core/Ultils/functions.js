@@ -9,6 +9,7 @@ export async function ccIsValidAndResult( {
 }) {
 
   return {
+    s:"(8",
     sla: String(request),
   l:JSON.stringify(request),
   a:request
