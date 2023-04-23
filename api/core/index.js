@@ -44,7 +44,7 @@ server.post('/', async (req, res) => {
        } catch (e) {
          result = {
            success:false,
-           error: e.message
+           error: e.message,asd
            result:"erro ao fazer as requests"
          }
        }
