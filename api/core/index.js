@@ -6,7 +6,7 @@ server.get('/', async (req, res) => {
 });
 
 // Declare your Lambda handler
-export handler = async (event, context) => {
+export async function handler (event, context)  {
   // Run the request
   return await server.run(event, context);
 };;
